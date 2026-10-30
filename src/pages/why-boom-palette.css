@@ -1,0 +1,272 @@
+#root:has(.why-boom-page) {
+  --why-paper: #F5F5F7;
+  --why-ink: #142d42;
+  --why-muted: #405569;
+  --why-blue: #0f84c4;
+  --why-blue-bright: #29b6ff;
+  --why-coral: #ff784f;
+  overflow-x: clip;
+}
+
+#root:has(.why-boom-page) main {
+  color: var(--why-ink);
+}
+
+#root .why-boom-page {
+  background: transparent;
+  color: var(--why-ink);
+  padding-top: 0;
+}
+
+#root .why-boom-page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.6' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+#root .why-boom-page .why-boom-hero {
+  height: 1200px;
+  background: transparent;
+  filter: none;
+  opacity: 1;
+  mask-image: linear-gradient(to bottom, #000 0%, #000 56%, rgba(0,0,0,.88) 66%, rgba(0,0,0,.38) 84%, transparent 100%) !important;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 56%, rgba(0,0,0,.88) 66%, rgba(0,0,0,.38) 84%, transparent 100%) !important;
+}
+
+#root .why-boom-page .why-boom-hero-landscape {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 55% top;
+}
+
+#root .why-boom-page .why-boom-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(6,13,19,.12) 48%, rgba(6,13,19,.66) 78%, rgba(6,13,19,.32) 100%);
+}
+
+#root .why-boom-page .why-boom-content {
+  margin-top: 0 !important;
+  padding-top: clamp(500px, 66svh, 720px);
+}
+
+#root .why-boom-page .why-boom-hero-copy {
+  width: calc(100vw - 96px);
+  max-width: none;
+  margin-left: calc((100% - 100vw) / 2 + 48px);
+  padding-left: 0;
+  text-align: left;
+  text-shadow: 0 2px 24px rgba(10,20,26,.25);
+}
+
+#root .why-boom-page .why-boom-hero-copy h3 {
+  color: #fff;
+  margin-bottom: 22px;
+  font-size: clamp(18px, 1.5vw, 24px);
+  letter-spacing: 0;
+}
+
+#root .why-boom-page .why-boom-hero-copy h2 {
+  max-width: none;
+  margin: 0;
+  font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: clamp(46px, 4.8vw, 80px);
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+#root .why-boom-page .why-boom-hero-break { display: none; }
+#root .why-boom-page .why-boom-hero-copy h2 span {
+  font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+#root .why-boom-page .why-curve-stage {
+  margin-top: clamp(250px, 28svh, 330px);
+  margin-bottom: clamp(130px, 12vw, 190px);
+  z-index: 10;
+}
+#root .why-boom-page .why-boom-content > div:first-child :is(h2, span) {
+  color: #f7f9fb;
+}
+
+#root .why-boom-page .text-boom-green {
+  color: var(--why-blue-bright);
+  text-shadow: none;
+}
+
+#root .why-boom-page :is(h2, .why-curve-card h3, .why-comparison-card > div h3) {
+  font-family: var(--font-sans);
+  letter-spacing: -.035em;
+}
+
+#root .why-boom-page .why-comparison-card,
+#root .why-boom-page .why-code-card,
+#root .why-boom-page .why-method-grid > div > div:first-child > div > div {
+  background-color: rgba(8,18,28,.91);
+  border-color: rgba(255,255,255,.1);
+}
+
+#root .why-boom-page .why-curve-card {
+  color: #f4f7fa;
+  width: min(100%, 1180px);
+  background: linear-gradient(145deg, rgba(5,8,12,.98), rgba(12,20,28,.96));
+  border-color: rgba(255,255,255,.12);
+  backdrop-filter: blur(28px) saturate(112%);
+  -webkit-backdrop-filter: blur(28px) saturate(112%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 34px 90px rgba(4,20,34,.28);
+}
+
+#root .why-boom-page .why-curve-card > div:first-child {
+  margin-bottom: 24px;
+}
+
+#root .why-boom-page .why-curve-chart {
+  margin-top: 16px;
+}
+
+#root .why-boom-page .why-curve-plot {
+  height: 350px;
+}
+
+#root .why-boom-page .why-comparison {
+  position: relative;
+  z-index: 30;
+  margin-top: 0;
+}
+
+#root .why-boom-page .why-curve-card :is(h3, .text-white) {
+  color: #f4f7fa;
+}
+
+#root .why-boom-page .why-curve-card :is(.text-boom-text-dim, .text-white\/20, .text-white\/30) {
+  color: rgba(225,234,241,.58);
+}
+
+#root .why-boom-page .why-curve-card svg g[stroke="rgba(255,255,255,0.1)"] {
+  stroke: rgba(255,255,255,.22);
+}
+
+#root .why-boom-page .why-curve-card svg g[stroke="rgba(255,255,255,0.05)"] {
+  stroke: rgba(255,255,255,.1);
+}
+
+#root .why-boom-page .why-curve-card svg path[stroke="rgba(255,255,255,0.15)"] {
+  stroke: rgba(255,255,255,.28);
+}
+
+#root .why-boom-page .why-curve-card svg path[stroke="rgba(255,255,255,0.05)"] {
+  stroke: rgba(255,255,255,.1);
+}
+
+#root .why-boom-page .why-curve-card svg text {
+  fill: rgba(225,234,241,.58);
+}
+
+#root .why-boom-page .why-curve-card svg text[y="30"] {
+  fill: var(--why-blue-bright);
+}
+
+#root .why-boom-page .why-curve-card svg text[y="32"] {
+  fill: #f4f7fa;
+}
+
+#root .why-boom-page .why-curve-card foreignObject button {
+  color: rgba(244,247,250,.76);
+  background: rgba(255,255,255,.055);
+  border-color: rgba(255,255,255,.16);
+  box-shadow: none;
+  font-family: var(--font-sans);
+}
+
+#root .why-boom-page .why-curve-card foreignObject button[class*="border-[#29b6ff]"] {
+  color: #0876b3;
+  background: rgba(15,132,196,.12);
+  border-color: rgba(15,132,196,.65);
+}
+
+#root .why-boom-page .why-curve-card foreignObject button[class*="border-[#f97316]"] {
+  color: #c24b18;
+  background: rgba(249,115,22,.1);
+  border-color: rgba(249,115,22,.6);
+}
+
+#root .why-boom-page .why-comparison-without {
+  box-shadow: none;
+}
+
+#root .why-boom-page .why-comparison-without h3 { color: #e6edf2; }
+#root .why-boom-page .why-comparison-without p { color: #aebbc6; }
+
+#root .why-boom-page .why-comparison-with {
+  background-image: linear-gradient(135deg, var(--why-blue), #6fd5ff);
+  box-shadow: 0 18px 48px rgba(15,132,196,.2);
+}
+
+#root .why-boom-page .why-energy-section {
+  color: #f7f9fb;
+}
+
+/* Clear ink on the light atmosphere, without a dark halo around the copy. */
+#root .why-boom-page .why-energy-copy {
+  text-shadow: none;
+  filter: none;
+}
+#root .why-boom-page .why-energy-copy h2 {
+  color: var(--why-ink);
+  text-shadow: 0 0 8px rgba(255,255,255,.95), 0 0 24px rgba(255,255,255,.7), 0 0 48px rgba(255,255,255,.35);
+}
+#root .why-boom-page .why-energy-copy h3 { color: var(--why-blue); }
+#root .why-boom-page .why-energy-copy p { color: var(--why-muted); }
+#root .why-boom-page .why-energy-copy p span:first-child { color: var(--why-ink); }
+#root .why-boom-page .why-energy-copy p span:last-child { color: var(--why-blue); }
+
+#root .why-boom-page .why-method-grid {
+  --boom-green: var(--why-blue-bright);
+}
+
+#root .why-boom-page .why-boom-cta h2 > span:not(:last-child) {
+  color: var(--why-ink);
+}
+
+#root .why-boom-page .why-boom-cta h2 > span:last-child {
+  color: var(--why-blue);
+  background-image: none;
+}
+
+#root .why-boom-page .why-boom-cta > div:last-child > div > div:last-child {
+  background: rgba(8,18,28,.92);
+  border-color: rgba(255,255,255,.12);
+}
+
+#root:has(.why-boom-page) footer {
+  background: #050607;
+  color: #f3f5f7;
+  border-color: rgba(255,255,255,.08);
+}
+
+#root:has(.why-boom-page) footer .text-white { color: #f3f5f7; }
+#root:has(.why-boom-page) footer .text-boom-text-dim { color: #aab2ba; }
+
+@media (max-width: 767px) {
+  #root .why-boom-page :is(h2, .why-curve-card h3) { letter-spacing: -.025em; }
+  #root .why-boom-page .why-boom-hero { height: 1040px; }
+  #root .why-boom-page .why-boom-hero-landscape { object-position: 57% top; }
+  #root .why-boom-page .why-boom-hero::after {
+    background: linear-gradient(180deg, rgba(10,20,26,.13), rgba(10,20,26,.38) 42%, transparent 84%);
+  }
+  #root .why-boom-page .why-boom-content { margin-top: 0; padding-top: 480px; }
+  #root .why-boom-page .why-boom-hero-copy { width: 100%; max-width: 100%; margin-left: 0; padding-inline: 0; text-align: left; }
+  #root .why-boom-page .why-boom-hero-break { display: block; }
+  #root .why-boom-page .why-boom-hero-copy h2 { font-size: clamp(38px, 9vw, 58px); line-height: 1.25; }
+  #root .why-boom-page .why-boom-hero-copy h3 { margin-bottom: 20px; }
+  #root .why-boom-page .why-curve-stage { margin-top: 280px; }
+  #root .why-boom-page .why-curve-card { padding: 24px 18px; }
+  #root .why-boom-page .why-curve-stage { margin-bottom: 96px; }
+}

@@ -1,0 +1,692 @@
+/* Reference palette: off-white ground, black headings, grey copy, pale surfaces.
+   All original markup, image sources, section ordering and motion stay intact. */
+#root:has(main #overview) {
+  --paper: #F5F5F7;
+  --surface: #eee9dc;
+  --surface-white: #fbf8f0;
+  --ink: #142d42;
+  --muted: #304354;
+  --line: #d8d6cb;
+  --blue: #0f84c4;
+  --color-boom-green: var(--blue);
+  --color-boom-green-glow: transparent;
+  --color-boom-dark: var(--paper);
+  --color-boom-gray: #e8e8e8;
+  --color-boom-light-gray: var(--surface);
+  --color-boom-text-dim: var(--muted);
+  color: var(--ink);
+  overflow-x: clip;
+}
+
+#root:has(main #overview) main,
+#root:has(main #overview) main section {
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+#root:has(main #overview) :is(.text-glow, .box-glow) {
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#root:has(main #overview) main :is(h1, h2) {
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+#root:has(main #overview) main :is(.text-white, .text-white\/50, .text-white\/60, .text-white\/70, .text-white\/80, .text-white\/95) {
+  color: var(--ink);
+}
+
+#root:has(main #overview) main :is(.text-boom-text-dim, .text-gray-500, .text-gray-600) { color: var(--muted); }
+#root:has(main #overview) main h2 .text-boom-green { color: var(--ink); }
+#root:has(main #overview) main :is(.border-white\/5, .border-white\/10, .border-white\/20) { border-color: var(--line); }
+#root:has(main #overview) main .bg-white\/10 { background-color: #e3e3e3; }
+#root:has(main #overview) main .mix-blend-difference .text-white { color: #fff; }
+
+/* Keep the hero photograph, now a quiet, light-toned background. */
+#root:has(main #overview) #overview .bg-gradient-to-t {
+  background-image: linear-gradient(to top, #fafafa 0%, rgba(250,250,250,.72) 50%, rgba(250,250,250,.42) 100%);
+}
+#root:has(main #overview) #overview p { color: var(--muted); }
+#root:has(main #overview) #overview .border-boom-green { box-shadow: none; }
+#root:has(main #overview) #overview .shadow-2xl { box-shadow: none; }
+
+/* Preserve the original photographic audience cards and their readable overlays. */
+#root:has(main #overview) #audience .relative.overflow-hidden { border-color: transparent; }
+#root:has(main #overview) #audience .relative.overflow-hidden :is(h4, p) { color: #fff; }
+
+/* The device demonstration shares the flowing page background. */
+#root:has(main #overview) main > div:has(#device-contour) section { background: transparent; }
+#root:has(main #overview) main > div:has(#device-contour) .stagger-line { color: var(--ink); background-image: none; filter: none; }
+#root:has(main #overview) main > div:has(#device-contour) .text-white\/\[0\.03\] { color: rgba(0,0,0,.035); }
+#root:has(main #overview) main > div:has(#device-contour) .text-white\/50 { color: #a3a3a3; }
+
+/* Grey surfaces and a restrained blue selection, like the reference cards. */
+#root:has(main #overview) #wear { background-color: var(--paper); }
+#root:has(main #overview) #wear > .bg-gradient-to-b { background-image: none; background-color: var(--paper); }
+#root:has(main #overview) #wear button { background-color: var(--surface); color: var(--ink); border-color: transparent; }
+#root:has(main #overview) #wear button.bg-black { background-color: var(--ink); color: #fff; }
+#root:has(main #overview) #wear button:hover { background-color: #dce5ed; color: var(--ink); }
+#root:has(main #overview) #wear .group-hover\:bg-boom-green { background-color: var(--ink); }
+#root:has(main #overview) #wear .group:hover .group-hover\:bg-boom-green { background-color: var(--blue); }
+
+/* Keep every data photograph and its original white-on-photo data display. */
+#root:has(main #overview) #precision .precision-backdrop > .bg-gradient-to-t { background-image: none; }
+#root:has(main #overview) #precision .precision-backdrop h2 { color: transparent; }
+#root:has(main #overview) #precision .precision-description { background-color: transparent; box-shadow: none; filter: none; backdrop-filter: none; }
+#root:has(main #overview) #precision .precision-wave svg {
+  stroke: #19bdff;
+  filter: drop-shadow(0 0 4px rgba(15,132,196,.8)) drop-shadow(0 0 13px rgba(25,189,255,.42));
+}
+#root:has(main #overview) #precision .precision-edge-left { background-image: linear-gradient(to right, var(--paper), transparent); }
+#root:has(main #overview) #precision .precision-edge-right { background-image: linear-gradient(to left, var(--paper), transparent); }
+#root:has(main #overview) #precision .precision-wave-badge { border-color: rgba(15,132,196,.22); box-shadow: none; }
+#root:has(main #overview) #precision .bg-black\/80 { background-color: var(--surface-white); }
+#root:has(main #overview) #precision .bg-boom-gray\/50 { background-color: var(--surface); border-color: var(--line); }
+#root:has(main #overview) #precision .group :is(.text-white, .text-white\/50, .text-white\/60, .text-white\/70, .text-white\/80) { color: #fff; }
+#root:has(main #overview) #precision .group .text-boom-text-dim { color: #e0e0e0; }
+#root:has(main #overview) #precision .group .text-boom-green { color: #c3d8e9; }
+
+/* Black recovery container, scoped to the existing image and chart card. */
+#root:has(main #overview) #recovery .glass-panel {
+  --color-boom-text-dim: #a8a8a8;
+  color: #ffffff;
+  background-color: #000000;
+  border-color: transparent;
+  box-shadow: none;
+}
+#root:has(main #overview) #recovery .glass-panel .bg-black\/40 { background-color: rgba(0,0,0,.72); }
+#root:has(main #overview) #recovery .glass-panel :is(.text-white, h4) { color: #ffffff; }
+#root:has(main #overview) #recovery .glass-panel .text-white\/50 { color: #a8a8a8; }
+#root:has(main #overview) #recovery .glass-panel .text-boom-text-dim { color: #a8a8a8; }
+#root:has(main #overview) #recovery .glass-panel svg { filter: none; }
+#root:has(main #overview) #recovery .glass-panel .absolute.inset-0.z-0 { background: none; }
+#root:has(main #overview) #recovery .glass-panel .self-start { border-color: transparent; }
+#root:has(main #overview) #recovery .glass-panel .recovery-neon-curve {
+  filter: drop-shadow(0 0 5px rgba(15,132,196,.65)) drop-shadow(0 0 12px rgba(57,201,255,.25));
+}
+#root:has(main #overview) #recovery .glass-panel .text-boom-green { color: #39c9ff; }
+#root:has(main #overview) #recovery .glass-panel .text-boom-green\/70 { color: rgba(57,201,255,.7); }
+
+/* Preserve the alternating AI Coach timeline and all original message content. */
+#root:has(main #overview) #aicoach .bg-black,
+#root:has(main #overview) #aicoach .bg-\[\#111111\] { background-color: var(--surface); box-shadow: none; }
+#root:has(main #overview) #aicoach .text-transparent.bg-clip-text { color: var(--ink); background-image: none; }
+#root:has(main #overview) #aicoach [class*="shadow-[inset"] { color: var(--ink); background-color: var(--surface); box-shadow: none; border-color: transparent; }
+#root:has(main #overview) #aicoach .bg-black\/40 { background-color: var(--blue); }
+#root:has(main #overview) #aicoach .blur-\[50px\] { background-color: transparent; }
+#root:has(main #overview) #aicoach h5.text-\[\#FFFFFF\] { color: var(--blue); }
+#root:has(main #overview) #aicoach .bg-\[\#FFFFFF\] { background-color: #dce5ed; }
+#root:has(main #overview) #aicoach .bg-white\/10 { background-color: #dedede; }
+#root:has(main #overview) #aicoach .drop-shadow-md { filter: none; }
+
+/* The navigation and footer keep their original dimensions and positions. */
+#root:has(main #overview) nav {
+  background-color: rgba(255,255,255,.60);
+  border-color: rgba(255,255,255,.65);
+  backdrop-filter: blur(22px) saturate(145%);
+  -webkit-backdrop-filter: blur(22px) saturate(145%);
+}
+#root:has(main #overview) nav :is(a, .text-white) { color: var(--ink); }
+#root:has(main #overview) nav button { color: var(--ink); border-color: #dedede; }
+#root:has(main #overview) nav button.bg-white { background-color: var(--ink); color: #fff; }
+#root:has(main #overview) nav .bg-boom-green { background-color: var(--ink); box-shadow: none; }
+#root:has(main #overview) footer { color: var(--ink); background-color: var(--paper); border-color: var(--line); }
+#root:has(main #overview) footer .text-white { color: var(--ink); }
+#root:has(main #overview) footer .border-white\/5 { border-color: var(--line); }
+
+/* Mist-blue atmosphere and a light paper grain, beneath the original content. */
+#root:has(main #overview) main {
+  background-color: #edf5f8;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.065'/%3E%3C/svg%3E"),
+    linear-gradient(165deg, #f9fcfd 0%, #edf5f8 35%, #d7e9f0 75%, #bed9e5 100%);
+  background-repeat: repeat, no-repeat;
+  background-size: 180px 180px, 100% 100%;
+}
+#root:has(main #overview) main section:is(#audience, #wear, #precision, #recovery, #aicoach) { background-color: transparent; }
+#root:has(main #overview) #wear > .bg-gradient-to-b { background: none; }
+#root:has(main #overview) #precision .precision-edge-left { background-image: linear-gradient(to right, #e8f2f6, transparent); }
+#root:has(main #overview) #precision .precision-edge-right { background-image: linear-gradient(to left, #e8f2f6, transparent); }
+@media (max-width: 767px) {
+  #root:has(main #overview) #precision .precision-wave path { stroke-width: 10px; }
+}
+
+/* The original Waves GLSL renders at viewport size, behind all product content. */
+#root:has(main #overview) main {
+  position: relative;
+  z-index: 1;
+  background-image: none;
+  background-color: transparent;
+}
+.waves-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1;
+}
+.waves-viewport {
+  position: absolute;
+  inset: 0;
+}
+.waves-background canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.waves-background canvas[data-status="fallback"] { visibility: hidden; }
+#root:has(main #overview) footer {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+
+/* BOOM — humanist technology: blue ink, warm paper, analogue photographs. */
+#root:has(main #overview) {  --photo-film: sepia(.24) saturate(.78) contrast(.91) brightness(1.035);
+}
+#root:has(main #overview) > div { background: var(--paper); }
+#root:has(main #overview) main :is(h1, h2) {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: -.045em;
+  line-height: 1.28;
+  color: var(--ink);
+}
+#root:has(main #overview) main :is(h3, h4):not(.text-boom-green):not(.text-gray-500) {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+#root:has(main #overview) main h2 span { font-family: inherit; }
+#root:has(main #overview) main h3:is(.text-boom-green, .text-gray-500) {
+  font-family: var(--font-sans);
+  color: #175984;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .16em;
+}
+#root:has(main #overview) main p { line-height: 1.85; font-weight: 400; }
+#root:has(main #overview) main :is(img, div.bg-cover) { filter: var(--photo-film); }
+#root:has(main #overview) :is(#wear, #precision, #aicoach) :is(img, div.bg-cover) { filter: none; }
+#root:has(main #overview) #audience img { mix-blend-mode: normal; opacity: .95; }
+#root:has(main #overview) #overview img { opacity: .36; mix-blend-mode: multiply; }
+#root:has(main #overview) #overview .bg-gradient-to-t {
+  background-image: linear-gradient(to top, rgba(245,245,247,.10), rgba(245,245,247,.35) 55%, rgba(245,245,247,.06));
+}
+#root:has(main #overview) main #overview { background: transparent; }
+#root:has(main #overview) #overview h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(52px, 7.5vw, 112px);
+  letter-spacing: -.035em;
+}
+#root:has(main #overview) #overview .bg-boom-gray {
+  background: linear-gradient(145deg, #ece9e1, #bcbfb9);
+  border-color: rgba(20,45,66,.16);
+  box-shadow: inset 0 2px 4px #fff9, 0 24px 60px #243c4b18;
+}
+#root:has(main #overview) #overview p { color: #28495e; font-weight: 500; font-size: 12px; letter-spacing: .22em; }
+#root:has(main #overview) #overview h2 { font-size: clamp(20px, 2.4vw, 32px); }
+#root:has(main #overview) .product-showcase .showcase-device {
+  background: linear-gradient(125deg, #ffffff 0%, #e1e5e8 26%, #bec5ca 52%, #eef1f3 78%, #c5ccd1 100%);
+  border-color: #f5f7f9;
+  box-shadow: inset 0 2px 5px #fff, inset -3px -4px 10px #83909b66, 0 30px 60px #243b4d33;
+}
+#root:has(main #overview) .product-showcase .showcase-ring {
+  background: linear-gradient(145deg, #f7fafb, #b6c1c8);
+  border-color: #0f84c4;
+  box-shadow: 0 0 24px #0f84c433, inset 0 2px 12px #64778640;
+}
+#root:has(main #overview) .product-showcase .showcase-logo { color: #52616c; }
+#root:has(main #overview) main > div:has(#device-contour) .stagger-line {
+  font-family: var(--font-sans); font-weight: 500;
+}
+#root:has(main #overview) #wear button {
+  background: rgba(245,245,247,.65);
+  border-color: rgba(20,45,66,.2);
+}
+#root:has(main #overview) #wear button.bg-black { background: #0f84c4; color: #fff; border-color: #0f84c4; }
+#root:has(main #overview) #wear button.bg-black:hover { background: #0c72ab; color: #fff; border-color: #0c72ab; }
+#root:has(main #overview) #precision .precision-wave svg { stroke: #25b9ff; filter: drop-shadow(0 0 4px #0f84c4b3) drop-shadow(0 0 14px #25b9ff80); }
+#root:has(main #overview) #precision .precision-wave path { stroke-width: 8px; }
+#root:has(main #overview) #precision :is(.precision-edge-left,.precision-edge-right) { background: none; }
+#root:has(main #overview) #precision .precision-backdrop { opacity: .22; }
+#root:has(main #overview) #precision .precision-backdrop h2 { color: transparent; }
+#root:has(main #overview) #precision .precision-wave-badge {
+  width: clamp(112px, 12vw, 148px);
+  height: clamp(112px, 12vw, 148px);
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(220,246,255,.12);
+  border-color: rgba(72,190,255,.6);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  box-shadow: inset 0 0 20px #71d2ff26, 0 0 12px #25b9ff50, 0 0 36px #25b9ff33;
+}
+#root:has(main #overview) #precision .group .font-light { font-weight: 400; }
+#root:has(main #overview) #recovery .glass-panel { background: #101c22; border: 1px solid #31434b; }
+#root:has(main #overview) #recovery .glass-panel .bg-black\/40 { background: #101c22b8; }
+#root:has(main #overview) #recovery .glass-panel :is(.text-boom-text-dim, .text-white\/50) { color: #c6c9c1; }
+#root:has(main #overview) #recovery .glass-panel .text-boom-green { color: #89c9e5; }
+#root:has(main #overview) #recovery .glass-panel .text-boom-green\/70 { color: #a0bcc6; }
+#root:has(main #overview) #recovery .glass-panel .recovery-neon-curve { filter: none; }
+#root:has(main #overview) #aicoach [class*="shadow-[inset"] {
+  background: #f4efe3; color: #253f4e; border: 1px solid #d8d5c8;
+  box-shadow: 0 8px 30px #203d4c08;
+}
+#root:has(main #overview) #aicoach :is(.bg-black, .bg-\[\#111111\]) { background: #eee8d9; border-color: #d9d3c5; }
+#root:has(main #overview) nav {
+  background: rgba(250,247,238,.82); border-color: rgba(20,45,66,.13);
+  backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+}
+#root:has(main #overview) nav .bg-boom-green { background: #193b53; }
+#root:has(main #overview) main > .mix-blend-difference { mix-blend-mode: normal; }
+#root:has(main #overview) main > .mix-blend-difference .text-white { color: #163b57; }
+#root:has(main #overview) main > .mix-blend-difference .text-white\/20 { color: #567084; }
+#root:has(main #overview) main > .mix-blend-difference .bg-white { background: #163b57; }
+#root:has(main #overview) footer { background: rgba(245,245,247,.85); color: #142d42; border-color: #ced3cc; }
+#root:has(main #overview) footer :is(.text-white, .text-boom-text-dim) { color: #334f5d; }
+#root:has(main #overview) footer h4 { font-family: var(--font-sans); font-size: 20px; }
+.waves-background { background: #F5F5F7; }
+#root:has(main #overview) .waves-background { background: #F5F5F7; }
+.waves-background::after {
+  content: ""; position: absolute; inset: 0; opacity: .045; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.65' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@media (max-width: 767px) {
+  #root:has(main #overview) main :is(h1,h2) { letter-spacing: -.03em; }
+  #root:has(main #overview) main h3:is(.text-boom-green,.text-gray-500) { font-size: 10px; letter-spacing: .1em; }
+}
+
+/* A fine print grain sits over photos, without blurring faces or device details. */
+#root:has(main #overview) #aicoach div:has(> img) { position: relative; }
+#root:has(main #overview) #audience div:has(> img)::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  pointer-events: none; z-index: 1; opacity: .12; mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='film'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23film)'/%3E%3C/svg%3E");
+}
+/* Dark opening and closing chapters; bright blue remains the brand accent. */
+#root:has(main #overview) main #overview { background: #07090b; }
+#root:has(main #overview) #overview img {
+  opacity: 1; mix-blend-mode: normal;
+  filter: none;
+}
+#root:has(main #overview) #overview .bg-gradient-to-t {
+  background-image: linear-gradient(to top, #050608 0%, rgba(5,6,8,.78) 28%, rgba(5,6,8,.38) 68%, rgba(5,6,8,.26));
+}
+#root:has(main #overview) main #overview :is(h1, h2) { color: #f8f9fa; }
+#root:has(main #overview) main #overview h2 .text-boom-green { color: #ffffff; }
+#root:has(main #overview) #overview p { color: #aab3bd; }
+#root:has(main #overview) #overview p .text-white { color: #f7f9fc; }
+#root:has(main #overview) #overview .bg-boom-gray {
+  background: linear-gradient(150deg, #24272b, #101215);
+  border-color: #ffffff14;
+  box-shadow: inset 0 1px 1px #ffffff0d, 0 24px 60px #0008;
+}
+#root:has(main #overview) #overview .border-boom-green {
+  border-color: #1fb4ff;
+  box-shadow: 0 0 30px #0f84c477, inset 0 0 18px #0f84c422;
+}
+#root:has(main #overview) footer { background: #050607; color: #f3f5f7; border-color: #ffffff12; }
+#root:has(main #overview) footer .text-white { color: #f3f5f7; }
+#root:has(main #overview) footer .text-boom-text-dim { color: #aab2ba; }
+#root:has(main #overview) footer .border-white\/5 { border-color: #ffffff16; }
+
+/* Glass tint follows the section beneath the header. */
+#root .site-nav[data-theme],
+#root:has(main #overview) .site-nav[data-theme],
+#root .site-mobile-menu[data-theme] {
+  --nav-ink: #172d40;
+  --nav-line: rgba(20,45,66,.14);
+  --nav-accent: #0876b3;
+  --nav-cta-bg: #142d42;
+  --nav-cta-ink: #fff;
+  color: var(--nav-ink);
+  background: rgba(255,255,255,.025);
+  border-color: transparent;
+  backdrop-filter: blur(56px) saturate(115%);
+  -webkit-backdrop-filter: blur(56px) saturate(115%);
+  transition: background-color .3s ease, border-color .3s ease, color .3s ease;
+}
+#root .site-nav[data-theme="dark"],
+#root:has(main #overview) .site-nav[data-theme="dark"],
+#root .site-mobile-menu[data-theme="dark"] {
+  --nav-ink: #f3f6fa;
+  --nav-line: rgba(255,255,255,.13);
+  --nav-accent: #ffffff;
+  --nav-cta-bg: #f5f8fa;
+  --nav-cta-ink: #101a23;
+  background: rgba(8,11,15,.08);
+}
+#root .site-nav[data-theme] :is(a, button),
+#root:has(main #overview) .site-nav[data-theme] :is(a, button),
+#root .site-mobile-menu[data-theme] a { color: var(--nav-ink); border-color: var(--nav-line); }
+#root .site-nav[data-theme] .nav-explore-cta,
+#root:has(main #overview) .site-nav[data-theme] .nav-explore-cta,
+#root .site-mobile-menu[data-theme] .nav-explore-cta {
+  color: #fff;
+  background: linear-gradient(115deg, #0f84c4 0%, #0c72ab 100%);
+  border-color: rgba(255,255,255,.22);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 6px 20px rgba(15,132,196,.24);
+}
+#root .site-nav[data-theme] .nav-explore-cta:hover,
+#root:has(main #overview) .site-nav[data-theme] .nav-explore-cta:hover,
+#root .site-mobile-menu[data-theme] .nav-explore-cta:hover {
+  background: linear-gradient(115deg, #1593d5 0%, #0f84c4 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 8px 24px rgba(15,132,196,.32);
+}
+#root .site-nav[data-theme] a.text-boom-green,
+#root:has(main #overview) .site-nav[data-theme] a.text-boom-green,
+#root .site-mobile-menu[data-theme] a.text-boom-green { color: var(--nav-accent); text-shadow: none; }
+#root .site-nav[data-theme] .bg-boom-green,
+#root:has(main #overview) .site-nav[data-theme] .bg-boom-green { background: var(--nav-accent); box-shadow: none; }
+#root .site-nav[data-theme] button.bg-white,
+#root:has(main #overview) .site-nav[data-theme] button.bg-white,
+#root .site-mobile-menu[data-theme] button.bg-white { background: var(--nav-cta-bg); color: var(--nav-cta-ink); }
+#root .site-nav[data-hidden="true"] { pointer-events: none; }
+#root:has(main #overview) main > .mix-blend-difference { mix-blend-mode: difference; }
+#root:has(main #overview) main > .mix-blend-difference .text-white { color: white; }
+#root:has(main #overview) main > .mix-blend-difference .text-white\/20 { color: #ffffff66; }
+#root:has(main #overview) main > .mix-blend-difference .bg-white { background: white; }
+@media (prefers-reduced-motion: reduce) {
+  #root .site-nav[data-theme] { transition: none; }
+}
+
+#root:has(main #overview) main > .product-side-nav { mix-blend-mode: normal; }
+#root:has(main #overview) main > .product-side-nav[data-surface="light"] .text-white { color: #163b57; }
+#root:has(main #overview) main > .product-side-nav[data-surface="light"] .text-white\/20 { color: #567084; }
+#root:has(main #overview) main > .product-side-nav[data-surface="light"] .bg-white { background: #163b57; }
+
+/* Product render keeps its supplied silver finish and transparent silhouette. */
+#root:has(main #overview) main .product-showcase .showcase-product-image img { filter: none; }
+
+/* Data colours distinguish the five signals without changing the card layout. */
+#root:has(main #overview) #precision [data-metric="0"] { --metric-accent: #ff784f; }
+#root:has(main #overview) #precision [data-metric="1"] { --metric-accent: #55dfbf; }
+#root:has(main #overview) #precision [data-metric="2"] { --metric-accent: #51c8ff; }
+#root:has(main #overview) #precision [data-metric="3"] { --metric-accent: #ff784f; }
+#root:has(main #overview) #precision [data-metric="4"] { --metric-accent: #b6a1ff; }
+#root:has(main #overview) #precision .precision-card-surface { border: none; }
+#root:has(main #overview) #precision .metric-ui svg [stroke="#FFFFFF"] { stroke: var(--metric-accent); }
+#root:has(main #overview) #precision .metric-ui svg.stroke-\[\#FFFFFF\] { stroke: var(--metric-accent); }
+#root:has(main #overview) #precision .metric-ui .bg-\[\#FFFFFF\] { background: var(--metric-accent); color: #14202b; }
+#root:has(main #overview) #precision .metric-ui .text-xl,
+#root:has(main #overview) #precision .metric-ui .text-3xl { color: var(--metric-accent); }
+#root:has(main #overview) #precision .metric-ui .group\/bar { background: color-mix(in srgb, var(--metric-accent) 32%, transparent) !important; }
+
+/* Warm amber for rescheduling, coral for training, mint for recovery, lilac for sleep. */
+#root:has(main #overview) #aicoach .coach-stage[data-scene="0"] { --coach-accent: #29b6ff; }
+#root:has(main #overview) #aicoach .coach-stage[data-scene="1"] { --coach-accent: #ff784f; }
+#root:has(main #overview) #aicoach .coach-stage[data-scene="2"] { --coach-accent: #29b6ff; }
+#root:has(main #overview) #aicoach .coach-stage[data-scene="3"] { --coach-accent: #ff784f; }
+#root:has(main #overview) #aicoach .coach-stage .coach-chat,
+#root:has(main #overview) #aicoach .coach-stage .coach-window {
+  background:
+    radial-gradient(ellipse at 95% 0%, color-mix(in srgb, var(--coach-accent) 19%, transparent), transparent 65%),
+    linear-gradient(135deg, rgba(24,40,54,.82), rgba(9,19,30,.76));
+  color: #f0f4f7;
+  border: 1px solid rgba(222,242,255,.12);
+  backdrop-filter: blur(32px) saturate(140%);
+  -webkit-backdrop-filter: blur(32px) saturate(140%);
+  box-shadow: inset 0 1px 0 #ffffff14, 0 12px 32px #10273826, 0 0 25px color-mix(in srgb, var(--coach-accent) 10%, transparent);
+}
+#root:has(main #overview) #aicoach .coach-stage .coach-window .text-white { color: #f0f4f7; }
+#root:has(main #overview) #aicoach .coach-stage .coach-window .text-white\/60 { color: #b8c8d2; }
+#root:has(main #overview) #aicoach .coach-stage h5 { color: color-mix(in srgb, var(--coach-accent) 45%, #142d42); }
+#root:has(main #overview) #aicoach .coach-stage .coach-node { background: #14232d; border-color: var(--coach-accent); }
+#root:has(main #overview) #aicoach .coach-stage .coach-node > div { background: transparent; }
+#root:has(main #overview) #aicoach .coach-stage .coach-node svg { color: var(--coach-accent); }
+#root:has(main #overview) #aicoach .coach-stage .coach-face { background: #14232d; }
+#root:has(main #overview) #aicoach .coach-stage .coach-face > .absolute { background: var(--coach-accent); }
+#root:has(main #overview) #aicoach .coach-stage .coach-window .w-8 { background: var(--coach-accent); box-shadow: none; }
+#root:has(main #overview) #aicoach .coach-stage .coach-window .w-8 svg { color: #14232d; }
+#root:has(main #overview) #aicoach .coach-stage .coach-window .blur-\[50px\] { background: var(--coach-accent); opacity: .12; }
+
+/* Keep the message clear of the product silhouette and blue ring. */
+#root:has(main #overview) .product-showcase .showcase-copy .stagger-line {
+  color: #142d42;
+  letter-spacing: -.035em;
+  line-height: 1.3;
+}
+@media (min-width: 768px) {
+  .product-showcase .showcase-copy-left { right: calc(50% + 180px); max-width: calc(50% - 205px); }
+  .product-showcase .showcase-copy-right { left: calc(50% + 180px); max-width: calc(50% - 205px); }
+  .product-showcase .showcase-copy .stagger-line { white-space: normal; }
+}
+@media (max-width: 767px) {
+  .product-showcase .showcase-copy { position: relative; inset: auto; transform: none; margin-top: 110px; gap: 10px; padding: 0 24px; }
+  .product-showcase .showcase-copy > div { margin: 0; transform: none; }
+}
+
+#root:has(main #overview) #precision .precision-wave-badge .text-boom-green {
+  color: #087fbd;
+  text-shadow: 0 0 12px #25b9ff66;
+}
+#root:has(main #overview) #precision .precision-card-gallery [data-metric] :is(h4, p, span, div) {
+  font-family: var(--font-sans);
+}
+#root:has(main #overview) #precision .precision-card-gallery h4 {
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+#root:has(main #overview) #precision .precision-card-wordmark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  user-select: none;
+  color: rgba(20,65,94,.09);
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: clamp(110px, 18vw, 290px);
+  line-height: .82;
+  letter-spacing: -.07em;
+  white-space: nowrap;
+}
+
+/* Light sans-serif captions for the five athlete portraits. */
+#root:has(main #overview) #audience :is(h4, p) {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  letter-spacing: .01em;
+}
+
+/* The supplied wordmark follows the navigation's light and dark modes. */
+#root .site-nav .brand-logo { display: block; width: 56px; height: 8px; filter: brightness(0); }
+#root .site-nav[data-theme="dark"] .brand-logo { filter: none; }
+#root .site-nav .site-nav-links a { font-weight: 500; }
+#root .site-nav .site-nav-links a.text-boom-green { font-weight: 650; }
+#root .site-nav[data-theme="dark"] .site-nav-links a {
+  text-shadow: 0 1px 2px rgba(4,28,47,.32);
+}
+#root .site-nav[data-theme="dark"] .site-nav-links a.text-boom-green {
+  text-shadow: 0 1px 2px rgba(4,28,47,.28);
+}
+
+/* A soft white field for the wear chapter, fading into the shared atmosphere. */
+#root:has(main #overview) main #wear {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,.78) 16%, #ffffff 46%, rgba(255,255,255,.92) 72%, rgba(255,255,255,0) 100%);
+}
+
+/* An arched field fades into the photo gallery without a hard lower edge. */
+#root:has(main #overview) main #precision {
+  padding: 0 0 var(--chapter-space);
+  background: transparent;
+}
+#root:has(main #overview) #precision .precision-feature {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+  width: min(88%, 1400px);
+  margin: 48px auto 0;
+  padding: 130px 0 32px;
+  color: #fff6e9;
+}
+#root:has(main #overview) #precision .precision-feature::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -140px;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50% 50% 0 0 / min(44vw, 520px) min(44vw, 520px) 0 0;
+  background-color: #123443;
+  background-image: linear-gradient(180deg, rgba(3,13,22,.42), rgba(3,13,22,.32) 70%, rgba(3,13,22,.38)), url('/precision-thermal-back.png');
+  background-size: cover;
+  background-position: center 22%;
+  background-repeat: no-repeat;
+  filter: none;
+  mix-blend-mode: normal;
+  opacity: 1;
+  mask-image: linear-gradient(to bottom, #000 0%, #000 80%, rgba(0,0,0,.9) 85%, rgba(0,0,0,.3) 91%, transparent 95%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 80%, rgba(0,0,0,.9) 85%, rgba(0,0,0,.3) 91%, transparent 95%);
+}
+#root:has(main #overview) #precision .precision-feature > .precision-backdrop { display: none; }
+#root:has(main #overview) #precision .precision-feature > .max-w-7xl { width: 78%; }
+#root:has(main #overview) #precision .precision-feature h2 {
+  color: #fff;
+  font-weight: 650;
+  text-shadow: none;
+}
+#root:has(main #overview) #precision .precision-feature h3 {
+  color: #f0f5fa;
+  font-weight: 600;
+  text-shadow: none;
+}
+#root:has(main #overview) #precision .precision-description {
+  color: #fff;
+  font-weight: 500;
+  text-shadow: none;
+}
+#root:has(main #overview) #precision .precision-wave-area { height: 280px; margin-top: 20px; margin-bottom: 0; }
+#root:has(main #overview) #precision .precision-wave-badge > span {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: clamp(36px, 3.7vw, 46px);
+  line-height: 1;
+}
+#root:has(main #overview) #precision .precision-wave-badge .text-boom-green {
+  color: #b8eaff;
+  margin-left: 0;
+  font-size: clamp(14px, 1.6vw, 18px);
+}
+#root:has(main #overview) #precision .precision-card-gallery { margin-top: 0; }
+#root:has(main #overview) #precision .precision-card-gallery > .flex { margin-top: 0; padding-top: 140px; }
+@media (max-width: 767px) {
+  #root:has(main #overview) #precision .precision-feature {
+    width: calc(100% - 16px);
+    padding: 90px 0 32px;
+  }
+  #root:has(main #overview) #precision .precision-feature > .max-w-7xl { width: 90%; padding: 0 20px; }
+  #root:has(main #overview) #precision .precision-feature h2 { font-size: 24px; }
+  #root:has(main #overview) #precision .precision-wave-area { height: 220px; }
+  #root:has(main #overview) #precision .precision-card-gallery > .flex { padding-top: 100px; }
+  #root:has(main #overview) #precision .precision-feature::before { bottom: -100px; border-radius: 50% 50% 0 0 / 190px 190px 0 0; }
+}
+
+/* Match the breathing room above and below the precision chapter. */
+#root:has(main #overview) #precision .precision-sampling {
+  background: repeating-linear-gradient(to right, #ffffff12 0, #ffffff38 22px, #ffffff70 23px, transparent 24px, transparent 48px);
+  mix-blend-mode: normal;
+  opacity: 1;
+  backdrop-filter: blur(1.5px) saturate(125%);
+  -webkit-backdrop-filter: blur(1.5px) saturate(125%);
+  mask-image: repeating-linear-gradient(to right, #000 0, #000 24px, transparent 24px, transparent 48px), linear-gradient(to bottom, transparent 0%, #000 22%, #000 74%, transparent 100%);
+  -webkit-mask-image: repeating-linear-gradient(to right, #000 0, #000 24px, transparent 24px, transparent 48px), linear-gradient(to bottom, transparent 0%, #000 22%, #000 74%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+@media (prefers-reduced-motion: reduce) {
+  #root:has(main #overview) #precision .precision-sampling {
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+  }
+}
+#root:has(main #overview) { --chapter-space: 300px; }
+#root:has(main #overview) main #wear { padding-bottom: var(--chapter-space); }
+#root:has(main #overview) #precision .precision-wave {
+  mask-image: linear-gradient(to right, transparent, #000 2%, #000 98%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 2%, #000 98%, transparent);
+}
+#root:has(main #overview) #precision .precision-wave svg {
+  width: calc(100% + 32px);
+  flex-shrink: 0;
+  margin-left: -16px;
+}
+@media (max-width: 767px) {
+  #root:has(main #overview) { --chapter-space: 150px; }
+}
+
+/* Three clear type levels over the running photograph. */
+#root:has(main #overview) #overview .hero-copy-scrim {
+  background: radial-gradient(ellipse 42% 24% at 50% 67%, rgba(5,18,29,.38) 0%, rgba(5,18,29,.20) 55%, transparent 100%);
+}
+#root:has(main #overview) #overview .hero-content {
+  width: calc(100% - 40px);
+  max-width: 960px;
+}
+#root:has(main #overview) #overview .hero-title {
+  margin: 0 0 22px;
+  font-size: clamp(44px, 5.6vw, 84px);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -.025em;
+  color: #fff;
+  white-space: nowrap;
+}
+#root:has(main #overview) #overview .hero-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px .45em;
+  margin: 0 0 18px;
+  padding: 0;
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: .025em;
+  color: #fff;
+}
+#root:has(main #overview) #overview .hero-coach-label {
+  font-weight: 600;
+  letter-spacing: .035em;
+  white-space: nowrap;
+}
+#root:has(main #overview) #overview .hero-tagline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 .4em;
+  margin: 0;
+  font-size: clamp(15px, 1.15vw, 18px);
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: .025em;
+  text-transform: none;
+  color: #fff;
+}
+#root:has(main #overview) #overview .hero-tagline span { white-space: nowrap; }
+@media (max-width: 600px) {
+  #root:has(main #overview) #overview .hero-copy-scrim {
+    background: radial-gradient(ellipse 70% 24% at 50% 65%, rgba(5,18,29,.38) 0%, rgba(5,18,29,.20) 55%, transparent 100%);
+  }
+  #root:has(main #overview) #overview .hero-title { margin-bottom: 16px; }
+  #root:has(main #overview) #overview .hero-subtitle { margin-bottom: 14px; }
+}

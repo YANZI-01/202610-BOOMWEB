@@ -1,0 +1,28 @@
+/* Match the navigation's light glass without adding a dark tinted panel. */
+#root #site-footer.site-footer-glass {
+  background: rgba(255, 255, 255, .025);
+  -webkit-backdrop-filter: blur(56px) saturate(115%);
+  backdrop-filter: blur(56px) saturate(115%);
+  border: 0;
+  border-top: 1px solid rgba(20, 45, 66, .10);
+  border-radius: 0;
+  margin: 0;
+  color: #172d40;
+  box-shadow: none;
+}
+
+#root #site-footer.site-footer-glass .text-white { color: #172d40; }
+#root #site-footer.site-footer-glass .text-boom-text-dim { color: #334f5d; }
+#root #site-footer.site-footer-glass > .border-t { border-color: rgba(20, 45, 66, .14); }
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  #root #site-footer.site-footer-glass { background-color: #f5f5f7; }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  #root #site-footer.site-footer-glass {
+    background-color: #f5f5f7;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}

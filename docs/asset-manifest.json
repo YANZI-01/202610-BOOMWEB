@@ -1,0 +1,315 @@
+[
+  {
+    "path": "public/03-02.jpg",
+    "bytes": 486771,
+    "sha256": "805281a323f84594532ac031081eab20fbd7039c87cd87fe2a936876c3503824",
+    "referencedBy": [
+      "src/components/PrecisionData.tsx"
+    ]
+  },
+  {
+    "path": "public/03-03.jpg",
+    "bytes": 330971,
+    "sha256": "55c856fe789d8e66985ab81488af31873dc3c56d4e5a7169f9482aba5af2a9d6",
+    "referencedBy": [
+      "src/components/PrecisionData.tsx"
+    ]
+  },
+  {
+    "path": "public/03-04.jpg",
+    "bytes": 419149,
+    "sha256": "e060f6ad47c130b126e387474b58d5f2d2d829ba378d1229c4bc6e28554aa8e7",
+    "referencedBy": [
+      "src/components/PrecisionData.tsx"
+    ]
+  },
+  {
+    "path": "public/04-1.png",
+    "bytes": 4438640,
+    "sha256": "cc66110b56b2eb1e2229c4c17efe72f991e60b0c65e1f9ce81eb3153b7c8f0e4",
+    "referencedBy": [
+      "src/components/AICoachTimeline.tsx",
+      "src/components/PrecisionData.tsx"
+    ]
+  },
+  {
+    "path": "public/04-2.png",
+    "bytes": 3020342,
+    "sha256": "6f9f62234374eb2c5b6dbe40e0a353152e6d9c08fd13aa0abd182469b3ea2982",
+    "referencedBy": [
+      "src/components/AICoachTimeline.tsx"
+    ]
+  },
+  {
+    "path": "public/04-3.png",
+    "bytes": 3078888,
+    "sha256": "2ceb531176c35d51f58ba42760fca857350a98c58b25e6391c0e398f9e8d075c",
+    "referencedBy": [
+      "src/components/AICoachTimeline.tsx"
+    ]
+  },
+  {
+    "path": "public/04－４-1.jpg",
+    "bytes": 1754916,
+    "sha256": "ef76c7ebcfbc241308baa9b51c5db6606675408c3a523bd88823b78f76dfe585",
+    "referencedBy": [
+      "src/components/AICoachTimeline.tsx"
+    ]
+  },
+  {
+    "path": "public/05-1.png",
+    "bytes": 1038694,
+    "sha256": "fb15877a36a7499dda7cb895841688c5ef7118f30183eacd8f006d1d7b9ff794",
+    "referencedBy": [
+      "src/components/TargetAudience.tsx"
+    ]
+  },
+  {
+    "path": "public/05-2.png",
+    "bytes": 1657306,
+    "sha256": "b0bd919f91c3bc4c4858d07ab80c161b2e3d3f52ea0d9c4c065e694f52be06ea",
+    "referencedBy": [
+      "src/components/TargetAudience.tsx"
+    ]
+  },
+  {
+    "path": "public/05-3.png",
+    "bytes": 1632067,
+    "sha256": "35f689d002adbebde01779907e10137adcb12efeb8ded91281b68a6855d8b10a",
+    "referencedBy": [
+      "src/components/TargetAudience.tsx"
+    ]
+  },
+  {
+    "path": "public/05-4.png",
+    "bytes": 1491640,
+    "sha256": "f1e530e1447b42d309690fdbf03cd29d718095a81c5f95a418a2d49ee72c1a67",
+    "referencedBy": [
+      "src/components/TargetAudience.tsx"
+    ]
+  },
+  {
+    "path": "public/05-5.png",
+    "bytes": 518665,
+    "sha256": "c395aa8473bc17a2c1f55fec3191f9124c022a0f597c93ab24e733fe3924ba88",
+    "referencedBy": [
+      "src/components/TargetAudience.tsx"
+    ]
+  },
+  {
+    "path": "public/boom-app-analysis-screen.png",
+    "bytes": 5266732,
+    "sha256": "18114fa0e31c01512b44715c84c3e0e7c9c43d7c9e4f82e3441d9a7190662f1b",
+    "referencedBy": [
+      "src/components/BoomApp.tsx"
+    ]
+  },
+  {
+    "path": "public/boom-app-coach-dialogue.png",
+    "bytes": 4762661,
+    "sha256": "41bf704439e61e62035043b662e945e98e0bd51944dd116d26e8b12b6769a0e5",
+    "referencedBy": [
+      "src/components/BoomApp.tsx"
+    ]
+  },
+  {
+    "path": "public/boom-app-coach-home.png",
+    "bytes": 3915590,
+    "sha256": "3d486ab50a19d2b3fe83ed73fe817de6127c8fa9509e29328b156934e837ed3b",
+    "referencedBy": [
+      "src/components/BoomApp.tsx"
+    ]
+  },
+  {
+    "path": "public/boom-app-home-updated.png",
+    "bytes": 9409796,
+    "sha256": "ba501086b890b2392bc0f348f093ee6687d5b00fc5077b53e17537ff9842ebd9",
+    "referencedBy": [
+      "src/components/BoomApp.tsx"
+    ]
+  },
+  {
+    "path": "public/boom-app-journal-screen.png",
+    "bytes": 4790271,
+    "sha256": "fddcbf31445b1057985ac22045ce41f1b7442c21a7f27a74332a87b6c7a6495a",
+    "referencedBy": [
+      "src/components/BoomApp.tsx"
+    ]
+  },
+  {
+    "path": "public/boom-app-team-leader.png",
+    "bytes": 6326215,
+    "sha256": "d231b8e2dbf86cf708c33a82f32d580fac5b3254c3953952e981a6206a56b0fa",
+    "referencedBy": [
+      "src/components/BoomApp.tsx"
+    ]
+  },
+  {
+    "path": "public/boom-app-team-member.png",
+    "bytes": 6210679,
+    "sha256": "0d9f586459b8681c3125655d893d7502acaa615fdc21da5b7c89a35ecc9e9868",
+    "referencedBy": [
+      "src/components/BoomApp.tsx"
+    ]
+  },
+  {
+    "path": "public/boom-one-silver.png",
+    "bytes": 1063174,
+    "sha256": "1496aff3e5fb9ef2fb95cca7388f6523167de5acb9a4a567f0d3d315b70a8252",
+    "referencedBy": [
+      "src/components/ProductShowcase.tsx"
+    ]
+  },
+  {
+    "path": "public/boomai-logo.png",
+    "bytes": 11584,
+    "sha256": "3175892d16bd920385bdd42e5678b68fe4ece8d9d204af26243e612bd7feaea4",
+    "referencedBy": [
+      "src/components/Navbar.tsx"
+    ]
+  },
+  {
+    "path": "public/brand02-1.png",
+    "bytes": 1958522,
+    "sha256": "318f8dd6660c1c425e757e31b83f097a802d49174a0dc8ca875a164abc45ee14",
+    "referencedBy": [
+      "src/components/AboutCompany.tsx"
+    ]
+  },
+  {
+    "path": "public/brand02-2-1.jpg",
+    "bytes": 701216,
+    "sha256": "54ae34e34529ff59b01abbad08a8dee1b37987385332fd2dc2cc7e72ccfe9cb6",
+    "referencedBy": [
+      "src/components/AboutCompany.tsx"
+    ]
+  },
+  {
+    "path": "public/brand02-3.jpg",
+    "bytes": 571723,
+    "sha256": "c52d742e057fe7685071d1b62e98d338d66e57e772f29cbf086fa20b96533477",
+    "referencedBy": [
+      "src/components/AboutCompany.tsx"
+    ]
+  },
+  {
+    "path": "public/brand02-4.jpg",
+    "bytes": 981817,
+    "sha256": "6562b942609303a86970e926dfef4add401c4e80b0a7a22b72ab8478bd645f78",
+    "referencedBy": [
+      "src/components/AboutCompany.tsx"
+    ]
+  },
+  {
+    "path": "public/brand02-5.jpg",
+    "bytes": 1099079,
+    "sha256": "6aee4d5544eaa726d70892781306e7301a13a9ca9bf405dd83f23d458d47ed2d",
+    "referencedBy": [
+      "src/components/AboutCompany.tsx"
+    ]
+  },
+  {
+    "path": "public/BRAND1.png",
+    "bytes": 3361237,
+    "sha256": "05828e0a13e1ea58d7263539e01624fc7268d5c592f4e5b5bd32cbc84e3bcbd9",
+    "referencedBy": [
+      "src/components/AboutCompany.tsx"
+    ]
+  },
+  {
+    "path": "public/BRAND2.jpg",
+    "bytes": 885601,
+    "sha256": "b0a73748490952af92b7f4ec96d3702ca3ddb09474d016990971fe17e5d40b54",
+    "referencedBy": [
+      "src/components/AboutCompany.tsx"
+    ]
+  },
+  {
+    "path": "public/hero-runners-keli.png",
+    "bytes": 7426897,
+    "sha256": "b6c619a67c023181702ffb7ab9f85020810d97d4f5433efa1001e9e4f74b7124",
+    "referencedBy": [
+      "src/components/Hero.tsx"
+    ]
+  },
+  {
+    "path": "public/kapian-01.jpg",
+    "bytes": 642659,
+    "sha256": "9aed5bbfd3f970cc51196d37eec9e5623e97f44b996dca3dbe7473f20509cb32",
+    "referencedBy": [
+      "src/components/WithoutBoom.tsx"
+    ]
+  },
+  {
+    "path": "public/kapian-02.jpg",
+    "bytes": 660040,
+    "sha256": "7df17c534dc3705eeee7376e3fa96e219a49af180b84fc58e8e9b52bcdd27bbc",
+    "referencedBy": [
+      "src/components/WithoutBoom.tsx"
+    ]
+  },
+  {
+    "path": "public/kapian-03.jpg",
+    "bytes": 203299,
+    "sha256": "e42e140d370f72f7844804bd6ad1e4c409f8e23495ddb3d5274ea73e8c9aabe2",
+    "referencedBy": [
+      "src/components/WithoutBoom.tsx"
+    ]
+  },
+  {
+    "path": "public/precision-thermal-back.png",
+    "bytes": 1554878,
+    "sha256": "dff649a869031ee5a5a519006f9ae3791a547839e1ab47202293fd5fa73ff897",
+    "referencedBy": [
+      "src/pages/product-palette.css"
+    ]
+  },
+  {
+    "path": "public/wear-placement-10.png",
+    "bytes": 1936132,
+    "sha256": "0981c2173a499ff9bc4215140b55dfbc3c8574403a7980bab6d0eaa325647cd6",
+    "referencedBy": [
+      "src/components/WearExperience.tsx"
+    ]
+  },
+  {
+    "path": "public/wear-placement-6.png",
+    "bytes": 2880925,
+    "sha256": "2b9f9afbbd9edb3de9d2447f51acac2d20cf3dfb2c109f3f1b3166d573f3d209",
+    "referencedBy": [
+      "src/components/WearExperience.tsx"
+    ]
+  },
+  {
+    "path": "public/wear-placement-7.png",
+    "bytes": 1794408,
+    "sha256": "fbed1b66660ec897cae0fb911d46896153353549971d5fcb956043929104a74b",
+    "referencedBy": [
+      "src/components/WearExperience.tsx"
+    ]
+  },
+  {
+    "path": "public/wear-placement-8.png",
+    "bytes": 2588896,
+    "sha256": "ef0ebb0e704f3586c78244f3bfe1e3ed4b3fd7619f7157f1a45b85c4d85efcee",
+    "referencedBy": [
+      "src/components/WearExperience.tsx"
+    ]
+  },
+  {
+    "path": "public/wear-placement-9.png",
+    "bytes": 1998455,
+    "sha256": "e8d99585f3ace413cf2ad994d9cef0f6f1ed62317727c72b348b7297ad3396e7",
+    "referencedBy": [
+      "src/components/WearExperience.tsx"
+    ]
+  },
+  {
+    "path": "public/why-boom-ridge-v3.png",
+    "bytes": 1791481,
+    "sha256": "d66fd0140a52cff8699b2a25d64636749aa6dbf2eae48761dafc336b45a90895",
+    "referencedBy": [
+      "src/components/WithoutBoom.tsx"
+    ]
+  }
+]
